@@ -23,10 +23,8 @@ public class Util {
 Connection connection = null;
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("OK");
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("ERRRoo");
         }
         return connection;
     }
